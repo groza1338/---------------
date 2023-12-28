@@ -7,7 +7,7 @@
 
 .landing{
 	min-height: 100vh;
-	background-image: url("/images/landing.webp");
+	background-image: url("images/landing.webp");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
