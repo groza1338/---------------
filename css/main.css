@@ -5,7 +5,13 @@
 	box-sizing: border-box;
 }
 
+:root {
+	/*--bg-color: #313131*/
+}
 
+body {
+	background-color: var(--bg-color);
+}
 
 .landing{
 	min-height: 100vh;
@@ -17,9 +23,12 @@
 }
 
 .slider {
-  width: 50vw;
+  /*height: 100vw;*/
   text-align: center;
   overflow: hidden;
+	
+  justify-content: center;
+  align-items: center;
 }
 
 .slides {
@@ -52,8 +61,8 @@
 .slides > div {
   scroll-snap-align: start;
   flex-shrink: 0;
-  width: 300px;
-  height: 300px;
+  width: 100vw;
+  height: 100vh;
   margin-right: 50px;
   border-radius: 10px;
   background: #eee;
@@ -66,9 +75,6 @@
   justify-content: center;
   align-items: center;
   font-size: 100px;
-}
-.slides > div:target {
-/*   transform: scale(0.8); */
 }
 
 .slider > a {
